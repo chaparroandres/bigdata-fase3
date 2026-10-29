@@ -36,9 +36,9 @@ pip install -r requirements.txt
 Primero se clona el repositorio y se descargan los datos. El script pagina la API del portal de a 50.000 registros y acepta como parámetro el total de registros que se quiere traer; por defecto trae un millón, que ocupa alrededor de 200 MB.
 
 ```bash
-git clone https://github.com/<usuario>/bigdata-batch-covid-colombia.git
-cd bigdata-batch-covid-colombia
-./scripts/download_data.sh 1000000
+git clone https://github.com/chaparroandres/bigdata-fase3.git
+cd bigdata-fase3
+bash scripts/download_data.sh 300000
 ```
 
 Luego se ejecuta la aplicación con spark-submit, indicando el archivo de entrada y la carpeta de salida.
